@@ -1,5 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
+import WeatherApp from './_components/WeatherApp/page.jsx'
+
 
 function SlideThree() {
   return (
@@ -13,6 +15,7 @@ function SlideThree() {
           className="object-contain w-[300px] md:w-[500px] h-auto"
         />
       </div>
+        <WeatherApp/>
     </div>
   );
 }
