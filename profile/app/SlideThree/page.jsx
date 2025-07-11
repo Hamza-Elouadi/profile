@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import WeatherApp from './_components/WeatherApp/page.jsx'
+import WeatherApp from "./_components/WeatherApp/page.jsx";
 
 
 function SlideThree() {
