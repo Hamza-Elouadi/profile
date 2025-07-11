@@ -1,17 +1,18 @@
 "use client";
 import React from "react";
-import { FaFacebookF, FaInstagram, FaWhatsapp, FaXTwitter } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaXTwitter, FaEnvelope } from "react-icons/fa6";
 
 export default function Footer() {
   return (
     <footer className="bg-[#547E7E] text-white py-8 px-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center border-t border-gray-700 pt-6">
+        
         {/* Left side - text */}
         <p className="text-sm text-gray-400 text-center md:text-left">
           © {new Date().getFullYear()} Hamza Elouadi. All rights reserved.
         </p>
 
-        {/* Right side - social icons */}
+        {/* Right side - social icons + contact */}
         <div className="flex gap-4 mt-4 md:mt-0">
           <a
             href="https://facebook.com/your-profile"
@@ -44,6 +45,13 @@ export default function Footer() {
             className="text-white hover:text-sky-500 transition-colors"
           >
             <FaXTwitter size={20} />
+          </a>
+          <a
+            href="/Contact"
+            className="text-white hover:text-yellow-400 transition-colors"
+            title="Contact me"
+          >
+            <FaEnvelope size={20} />
           </a>
         </div>
       </div>
