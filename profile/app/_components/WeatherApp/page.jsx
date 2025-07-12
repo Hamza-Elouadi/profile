@@ -9,9 +9,11 @@ export default function WeatherApp({ title, description, imageUrl, githubUrl, li
   return (
     <div className="max-w-sm w-full bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300">
       <Image
-        src="/Weather-App.png"
+        src={imageUrl}
         alt={title}
         className="w-full h-56 object-cover"
+        width={400}
+        height={224}
       />
       <div className="p-4">
         <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
@@ -19,7 +21,7 @@ export default function WeatherApp({ title, description, imageUrl, githubUrl, li
         <div className="flex justify-between">
           {githubUrl && (
             <a
-              href="https://github.com/Hamza-Elouadi/Weather-App"
+              href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-sm bg-gray-900 text-white px-3 py-1.5 rounded hover:bg-gray-800"
@@ -30,7 +32,7 @@ export default function WeatherApp({ title, description, imageUrl, githubUrl, li
           )}
           {liveUrl && (
             <a
-              href="https://hamza-elouadi.github.io/Weather-App/"
+              href={liveUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-sm bg-blue-600 text-white px-3 py-1.5 rounded hover:bg-blue-700"
