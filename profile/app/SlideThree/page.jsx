@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import WeatherApp from "./_components/WeatherApp/page.jsx";
+import WeatherApp from "../_components/WeatherApp/page.jsx";
 
 function SlideThree() {
   return (
@@ -17,7 +17,7 @@ function SlideThree() {
 
       <WeatherApp
         title="Weather App"
-        description="A simple weather app using OpenWeatherMap API and React."
+        description="A modern weather and prayer times app that provides real-time forecasts and global prayer schedules using the OpenWeatherMap API."
         imageUrl="/Weather-App.png"
         githubUrl="https://github.com/Hamza-Elouadi/Weather-App"
         liveUrl="https://hamza-elouadi.github.io/Weather-App/"
